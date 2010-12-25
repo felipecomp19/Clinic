@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Clínica Psicológica</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Clínica Psicológica" />
+    <meta name="description" content="Site description here" />
+    <meta name="keywords" content="keywords here" />
+    <meta name="language" content="en" />
+    <meta name="subject" content="Site subject here" />
+    <meta name="robots" content="All" />
+    <meta name="copyright" content="Your company" />
+    <meta name="abstract" content="Site description here" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+	
+		<%= stylesheet_link_tag "style" , :media => "all" %>
+		<%= javascript_include_tag :all%>
+  
+	</head>
+  <body> 
+    <!-- top wrapper -->  
+    <div id="topWrapper"> 
+      <div id="topBannerWrapper"> 
+        <div id="topBanner"> 
+          <div id="hmenuWrapper"> 
+            <div id="hmenu"> 
+              <ul>
+                <li id="current" style="border:none">
+                  <a href="#" shape="rect">Início</a>
+                </li>
+                <li>
+                  <a href="#" shape="rect">Psicólogas</a>
+                </li>
+                <li>
+                  <a href="#" shape="rect">Eventos</a>
+                </li>
+                <li>
+                  <a href="#" shape="rect">Consultoria</a>
+                </li>
+<!--
+                <li>
+                  <a href="#" shape="rect">Sobre</a>
+                </li>
+-->
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+      </div>  
+      <div id="topSlideshowWrapper"> 
+        <div id="sliderContainer"> 
+          <!-- YOUR SLIDESHOW IMAGES HERE (recommended size 920x300) -->  
+          <div id="slider1"> 
+            <ul id="slider1Content">
+              <li class="slider1Image"> 
+                <a href="http://all-free-download.com" title="Audi R8" target="_blank" shape="rect"> 
+                  <img src="images/AudiR8.jpg" />  
+                  <span class="bottom" style="display: inline;"> 
+                    <strong>Audi R8</strong>  
+                    <br clear="none" /> Change the slideshow image easily in the HTML code.
+                  </span> 
+                </a> 
+              </li>
+              <li class="slider1Image"> 
+                <a href="http://all-free-download.com" title="Ferrari 612" target="_blank" shape="rect"> 
+                  <img src="images/FerrariBlack.jpg" />  
+                  <span class="bottom" style="display: inline;"> 
+                    <strong>Ferrari 612</strong>  
+                    <br clear="none" /> Change the slideshow image easily in the HTML code.
+                  </span> 
+                </a> 
+              </li>
+              <li class="slider1Image"> 
+                <a href="http://all-free-download.com" title="Lamborghini Gallardo" target="_blank" shape="rect"> 
+                  <img src="images/LamborghiniGallardoBlack.jpg" />  
+                  <span class="bottom" style="display: inline;"> 
+                    <strong>Lamborghini Gallardo</strong>  
+                    <br clear="none" /> Change the slideshow image easily in the HTML code.
+                  </span> 
+                </a> 
+              </li>
+              <li class="slider1Image" style="clear:both"></li>
+            </ul>  
+            <div id="sliderLeftMask"></div>  
+            <div id="sliderRightMask"></div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <!-- end top wrapper -->  
+    <div id="wrapper"> 
+      <div id="container"> 
+        <!--  content -->  
+        <div id="content"> 
+          <div style="margin-top:20px;"> 
+            <div id="main">
+							<%= yield :layout %>
+<!--              
+							<h1>Heading 1 sample</h1>  
+              <p> 
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.</p> 
+              </p>  
+              <h2>Heading 2 sample</h2>  
+              <p> 
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.</p> 
+              </p> 
+-->           
+					 	</div>  
+            <div id="sidebar"> 
+              <div class="bloc rounded" style="margin-top:20px;"> 
+                <h3>License</h3>  
+                <p>This template is free. You are free to use it, share it, redistribute it, modify it in any way you want as long as you 
+                  <strong>keep a link back to doTemplate Website</strong> in the footer. You can remove this link by making a $10 
+                  <a href="http://www.dotemplate.com/dt/index.jsp#donate" target="_blank" shape="rect">donation</a>.
+                </p> 
+              </div>  
+              <div class="bloc rounded" style="margin-top:20px;"> 
+                <h3>Latest news</h3>  
+                <p>Lorem ipsum dolor sit amet, turpis egestas commodo, eget non ultrices nec lectus, ac interdum, netus aliquam, vulputate vel reiciendis risus. Lorem ipsum dolor sit amet, turpis egestas commodo</p> 
+              </div> 
+            </div> 
+          </div>  
+          <div class="clear"></div> 
+        </div>  
+        <!-- end content -->  
+        <div class="clear" style="height:40px"></div> 
+      </div>  
+      <!-- end container --> 
+    </div>  
+    <div id="bottomWrapper"> 
+      <div id="footer"> 
+        <div class="footer-one-third"> 
+          <h2>Company</h2>  
+          <ul>
+            <li>
+              <a href="#" shape="rect">Who are we</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">What we do</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Contact</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Partners</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Links</a>
+            </li>
+          </ul> 
+        </div>  
+        <div class="footer-one-third"> 
+          <h2>Products</h2>  
+          <ul>
+            <li>
+              <a href="#" shape="rect">Products</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Services</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Clients</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Testimonials</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Links</a>
+            </li>
+          </ul> 
+        </div>  
+        <div class="footer-one-third footer-last"> 
+          <h2>Blog archives</h2>  
+          <ul>
+            <li>
+              <a href="#" shape="rect">Lorem ipsum</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Dolor sit</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Turpis egestas</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Commodo</a>
+            </li>
+            <li>
+              <a href="#" shape="rect">Eget non</a>
+            </li>
+          </ul> 
+        </div> 
+      </div>  
+      <div id="bottom-links"> 
+        <div style="padding-top:20px"> 
+          <!--
+KEEP THE FOLLOWING CODE IN RESPECT WITH COPYRIGHT OR MAKE 
+A $10 DONATION AT WWW.DOTEMPLATE.COM IF YOU WANT TO REMOVE IT 
+-->  
+          <a href="http://www.dotemplate.com" shape="rect">Web template</a> created with doTemplate
+        </div> 
+      </div> 
+    </div> 
+  </body>
+</html>

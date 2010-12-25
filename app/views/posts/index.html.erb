@@ -1,0 +1,30 @@
+<div id="post-list">
+  <h1>Listing posts</h1>
+
+  <table>
+  <% @posts.each do |post| %>
+    <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
+
+      <td class="list-textt">
+        <dl>
+          <dt><%=h post.title %></dt>
+          <dd><%=h truncate(post.text.gsub(/<.*?>/,''),
+                 :length => 80) %></dd>
+        </dl>
+      </td>
+
+      <td class="list-actions">
+        <%= link_to 'Show', post %><br/>
+        <%= link_to 'Edit', edit_post_path(post) %><br/>
+        <%= link_to 'Destroy', post, 
+                    :confirm => 'Are you sure?',
+                    :method => :delete %>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+
+<br />
+
+<%= link_to 'New post', new_post_path %>

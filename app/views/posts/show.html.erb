@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @post.title %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%=h @post.text %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @post.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

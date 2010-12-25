@@ -1,0 +1,7 @@
+<h1>Home Posts</h1>
+<% for post in @posts -%>
+	<h1><%=h post.title %></h1>
+	<p>
+		<%= post.text %>
+	</p>
+<% end %>
